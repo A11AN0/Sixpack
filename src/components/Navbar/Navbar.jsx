@@ -6,7 +6,8 @@ const Navbar = () => {
   return (
     <nav>
       <Logo/>
-      <p>T I C K E T - T R A C K E R</p>
+      <p>6-PACK</p>
+      <input type="text" placeholder="search" />
     </nav>
   )
 }
