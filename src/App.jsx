@@ -1,30 +1,25 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import CardList from './components/CardList';
+import {getBeers} from './services/beer.service';
 
 // import beers from './data/beers.js';
 
 
 const App = () => {
 
-  const [beers, setBeers] = useState([])
+const [currentFilter, setCurrentFilter] = useState('none');
 
-  const getBeers = async()=>{
-    const results = await fetch('https://api.punkapi.com/v2/beers?page=1&per_page=20');
-    const beerArr = await results.json()
-    return beerArr 
-  }
-
-  const updateBeer= async()=>{
-    setBeers(await getBeers())
-  }
+(async ()=>{
+  console.log(await getBeers(currentFilter))
+})()
   
 
   return (
     <>
-      <button onClick={()=>{updateBeer()}}>hi</button>
+      <button >hi</button>
       <Navbar />
-      <CardList beers={beers} />  
+      <CardList />  
     </>
   )
 }

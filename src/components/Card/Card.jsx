@@ -3,7 +3,7 @@ import styles from './Card.module.scss'
 
 const Card = (props) => {
 
-  const {beer} = props
+  
   
 
   const randomColour=()=>{
@@ -12,7 +12,7 @@ const Card = (props) => {
 
   return (
     <div className={styles.cardBody} style={{backgroundColor: randomColour()}} >
-      <p>{beer.name}</p>
+      <p></p>
     </div>
   )
 }
