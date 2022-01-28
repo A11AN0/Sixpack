@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import CardList from './components/CardList';
 import {getBeers} from './services/beer.service';
@@ -19,6 +19,10 @@ const optimizeBeerSelection = (input)=>{
   if(memory.length === 0){setMemory(beers)}
   setBeers(memory.filter((beer)=>((beer.name).toLowerCase()).includes(input.toLowerCase())))
 }
+
+useEffect(()=>{
+  determineBeerSelection('none')
+}, [])
   
 
   return (
