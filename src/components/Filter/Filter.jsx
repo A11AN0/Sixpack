@@ -5,21 +5,18 @@ const Filter = () => {
   return (
     <div className={styles.container}>
       <div>
-        <input type="radio" id="ABV" name="drone" value="ABV"
-         checked/>
-         <label for="ABV">ABV {`>`} 6%</label>
+        <input type="radio" id="ABV" name="drone" value="ABV"/>
+         <label>ABV {`>`} 6%</label>
       </div>
 
       <div>
-        <input type="radio" id="Classic" name="drone" value="Classic"
-         checked/>
-         <label for="Classic">Classic Range</label>
+        <input type="radio" id="Classic" name="drone" value="Classic"/>
+         <label >Classic Range</label>
       </div>
 
       <div>
-        <input type="radio" id="Acidity" name="drone" value="Acidity"
-         checked/>
-         <label for="Acidity">Acidity</label>
+        <input type="radio" id="Acidity" name="drone" value="Acidity"/>
+         <label>Acidity</label>
       </div>
       
     </div>
