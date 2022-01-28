@@ -2,11 +2,14 @@ import React from 'react'
 import styles from './Search.module.scss'
 import Filter from '../Filter';
 
-const Search = () => {
+const Search = (props) => {
+
+  const {setCurrentFilter}=props
+
   return (
     <div>
       <input type="text" placeholder="search" /> 
-      <Filter/>
+      <Filter setCurrentFilter={setCurrentFilter}/>
     </div>
   )
 }
