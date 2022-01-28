@@ -5,13 +5,13 @@ import Search from "../Search"
 
 const Navbar = (props) => {
 
-  const {determineBeerSelection}=props
+  const {determineBeerSelection, optimizeBeerSelection}=props
 
   return (
     <nav>
       <Logo/>
       <div>S I X P A C K</div>
-      <Search determineBeerSelection={determineBeerSelection}/> 
+      <Search determineBeerSelection={determineBeerSelection} optimizeBeerSelection={optimizeBeerSelection}/> 
     </nav>
   )
 }
