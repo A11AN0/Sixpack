@@ -11,7 +11,7 @@ const Card = (props) => {
   }
 
   return (
-    <div className={styles.cardBody} style={{backgroundColor: randomColour()}} >
+    <div className={styles.cardBody} style={{backgroundColor: randomColour()}} key={beer.id}>
       <p>{beer.name}</p>
     </div>
   )

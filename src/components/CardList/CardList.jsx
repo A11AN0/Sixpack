@@ -3,11 +3,7 @@ import styles from "./CardList.module.scss";
 import Card from "../Card";
 
 const CardList = (props) => {
-
-  const {beers}=props
-
-  
-  
+  const {beers}=props  
   return (
   <div className={styles.content}>
   {beers.map(beer => <Card beer={beer}/> )}  

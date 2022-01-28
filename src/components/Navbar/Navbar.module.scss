@@ -4,7 +4,7 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    height: fit-content;
+    height: 10%;
     position: -webkit-sticky;
 	position: sticky;
 	top: 0;
@@ -13,6 +13,7 @@ nav {
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     z-index: 2;
+    margin-top: 1px;
 }
 
 @media screen and (min-width: 481px){
@@ -37,6 +38,7 @@ nav {
     }
 
 }
+
 
 
 

@@ -4,12 +4,12 @@ import Filter from '../Filter';
 
 const Search = (props) => {
 
-  const {setCurrentFilter}=props
+  const {determineBeerSelection}=props
 
   return (
     <div>
       <input type="text" placeholder="search" /> 
-      <Filter setCurrentFilter={setCurrentFilter}/>
+      <Filter determineBeerSelection={determineBeerSelection}/>
     </div>
   )
 }
