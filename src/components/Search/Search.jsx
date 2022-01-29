@@ -1,15 +1,17 @@
-import React from 'react'
+import React, {useState} from 'react'
 import styles from './Search.module.scss'
 import Filter from '../Filter';
+import SearchBar from '../SearchBar';
 
 const Search = (props) => {
-
   const {determineBeerSelection, optimizeBeerSelection}=props
 
+  const [displayFilter, setDisplayFilter] = useState(false);
+
   return (
-    <div>
-      <input type="text" placeholder="search" onInput={e => optimizeBeerSelection(e.target.value)} /> 
-      <Filter determineBeerSelection={determineBeerSelection}/>
+    <div className={styles.Search}>
+      <SearchBar optimizeBeerSelection={optimizeBeerSelection} determineBeerSelection={determineBeerSelection} setDisplayFilter={setDisplayFilter} displayFilter={displayFilter}/> 
+      {displayFilter?<Filter determineBeerSelection={determineBeerSelection}/>:null}
     </div>
   )
 }
