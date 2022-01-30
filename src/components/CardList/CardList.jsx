@@ -6,7 +6,7 @@ const CardList = (props) => {
   const {beers}=props  
   return (
   <div className={styles.content}>
-  {beers.map(beer => <Card beer={beer}/> )}  
+  {beers.length? beers.map(beer => <Card beer={beer}/>):<div>Nothing found</div>}  
   </div>
   );
 };

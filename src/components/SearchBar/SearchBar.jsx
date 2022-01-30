@@ -9,10 +9,10 @@ const SearchBar = (props) => {
   return (
     <div className={styles.content}>
       <input type="text" placeholder="search" onInput={e => optimizeBeerSelection(e.target.value)} /> 
-      <span onClick={()=>{
+      <div className={styles.filterButton} onClick={()=>{
         determineBeerSelection('none')
         setDisplayFilter(!displayFilter)
-        }}>Filter button</span>
+        }}>Filter button</div>
     </div>
   )
 }
