@@ -76,6 +76,7 @@
 
             li{
                 font-size: 15px;
+                text-align: center;
             }
 
             
@@ -87,6 +88,14 @@
 
         
         
+    }
+
+}
+
+@media screen and (min-width: 430px){
+
+    .cardBody {
+        width: 430px;
     }
 
 }

@@ -1,6 +1,6 @@
 .cardBody {
-    width: 285px;
-    height: 285px;
+    min-width: 285px;
+    min-height: 285px;
     margin: 1px;
     display: flex;
     flex-direction: column;
@@ -9,6 +9,7 @@
     color: black;
     border-radius: 3px;
     margin: 1%;
+    cursor: pointer;
 
     h3 {
         font-weight: 300;
