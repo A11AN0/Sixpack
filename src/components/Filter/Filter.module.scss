@@ -2,14 +2,33 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     font-size: 12px;
-    position: relative;
     top: 65%;
     width: 80%;
+    position: relative;
+    top: 25%;
+    margin-left: 15%;
+    label{
+        position: relative;
+        bottom: 3.5px;
+        left: 2px;
+        font-size: 9px;
+        
+    }
 
+    
+}
+
+@media screen and (min-width: 991px){
+    
+    .container {
+        top: 60%;
+        margin-left: unset;
+    }
     label{
         position: relative;
         bottom: 2px;
         left: 2px;
     }
-    
+
+
 }

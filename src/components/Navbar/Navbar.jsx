@@ -10,7 +10,7 @@ const Navbar = (props) => {
   return (
     <nav>
       <Logo/>
-      <div>S I X P A C K</div>
+      <div className={styles.title}>S I X P A C K</div>
       <Search determineBeerSelection={determineBeerSelection} optimizeBeerSelection={optimizeBeerSelection}/> 
     </nav>
   )

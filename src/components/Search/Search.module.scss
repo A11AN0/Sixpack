@@ -5,4 +5,13 @@
     align-items: center;
     height: 100%;
     margin-bottom: 10px;
+    grid-column: span 2;
+}
+
+@media screen and (min-width: 991px){
+    
+    .Search {
+       grid-column: inherit;
+    }
+
 }

@@ -1,12 +1,11 @@
 
 .content{
     display: flex;
-    height: 40%;
-    width: 30%;
-    position: absolute;
+    height: 30px;
+    width: 65%;
     
     
-    
+     
     *{
         margin: 5px;
     }
@@ -21,7 +20,30 @@
         height: 100%;
         width: 100%;
         background: transparent;
+        text-align: center;
+        font-size: 0.7rem;
+        outline: none;
+        border-radius: 5px;
+        border: 1px solid;
         
+    }
+
+}
+
+@media screen and (min-width: 768px){
+    
+    .content {
+        height: 40px;    
+    }
+
+}
+
+@media screen and (min-width: 991px){
+    
+    .content {
+        position: absolute;
+        height: 40%;
+        width: 30%;
     }
 
 }
