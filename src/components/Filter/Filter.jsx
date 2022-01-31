@@ -19,7 +19,7 @@ const Filter = (props) => {
       </div>
       <div className={styles.customRadioButton}>
         <input type="radio" id="Acidity" name="drone" value="Acidity" onInput={()=>{determineBeerSelection('acidity')}}/>
-         <label>Acidity</label>
+         <label>Acidic Beers</label>
       </div> 
     </div>
   )

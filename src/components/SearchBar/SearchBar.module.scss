@@ -23,12 +23,18 @@
             transform: rotate(360deg);
             width: 1.3rem;
             height: 1.3rem;
-            cursor: pointer;   
+            cursor: pointer; 
         }
 
         svg:hover {
-            color: grey;
+            color: green;
         }
+
+        .active {
+            color: green;
+        }
+
+
 
     }
 
