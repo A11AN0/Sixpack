@@ -8,7 +8,7 @@ const CardFront = (props) => {
 
   return (
     <div className={styles.cardBody} style={{backgroundColor: colour}} key={beer.id}>  
-      <img className={styles.image} src={`${beer.image_url}`} alt="" srcset="" />
+      <img className={styles.image} src={`${beer.image_url}`} alt={`${beer.name}`} />
       <h3>{(beer.name).toUpperCase()}</h3> 
     </div>
   )

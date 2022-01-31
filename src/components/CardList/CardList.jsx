@@ -11,7 +11,7 @@ const CardList = (props) => {
 
   return (
   <div className={styles.content}>
-  {beers.length? beers.map(beer => <Card beer={beer} colour={randomColour()}/>):
+  {beers.length? beers.map(beer => <Card beer={beer} key={beer.id} colour={randomColour()}/>):
   <div className={styles.nothingFound}>Hmm, I've not heard of that beer yet...Try searching for something else</div>}  
   </div>
   );
