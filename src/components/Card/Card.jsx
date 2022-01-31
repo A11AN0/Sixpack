@@ -1,19 +1,19 @@
 import React from 'react'
 import styles from './Card.module.scss'
+import CardFront from '../CardFront';
+import CardBack from '../CardBack';
 
 const Card = (props) => {
 
-  const {beer}=props
+  const {beer, colour}=props
+  
   
 
-  const randomColour=()=>{
-    return `hsla(${~~(360 * Math.random())},70%,60%,0.2)`
-  }
-
   return (
-    <div className={styles.cardBody} style={{backgroundColor: randomColour()}} key={beer.id}>
-      <p>{beer.name}</p>
-    </div>
+    <>
+    {/* <CardFront beer={beer} colour={colour}/> */}
+    <CardBack beer={beer} colour={colour}/>
+    </>
   )
 }
 

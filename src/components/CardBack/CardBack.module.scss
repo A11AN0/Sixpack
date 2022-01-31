@@ -1,0 +1,92 @@
+.cardBody {
+    width: 100vw;
+    height: fit-content;
+    margin: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    border-radius: 3px;
+    margin: 2%;
+    display: grid;
+
+    .intro{
+
+        margin: 20px;
+        h3 {
+            font-weight: 300;
+            display: block;
+            margin: 10px;
+            text-align: center;
+        }
+    
+        h4 {
+            font-weight: 200;
+            display: block;
+            margin: 10px;
+            text-align: center;
+            font-style: italic;
+        }
+    
+        p {
+            width: 100%;
+            text-align: center;
+            font-weight: 300;
+        }
+
+    }
+
+
+
+
+    .facts{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+        
+
+        .image{
+            height: auto; 
+            width: auto; 
+            max-width: 200px; 
+            max-height: 200px;
+            margin: 10%;
+        }
+
+        ul{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            height: 75%;
+            list-style-type: none;
+
+            h3{
+                font-weight: 400;
+                font-size: 25px;
+                text-decoration: underline;
+                font-style: italic;
+            }
+
+            h4{
+                font-size: 17px;
+                font-weight: 300;
+                text-decoration: underline;
+            }
+
+            li{
+                font-size: 15px;
+            }
+
+            
+        }
+
+
+
+        
+
+        
+        
+    }
+
+}

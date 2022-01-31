@@ -6,6 +6,8 @@ import styles from './SearchBar.module.scss'
 const SearchBar = (props) => {
   const {optimizeBeerSelection, determineBeerSelection, setDisplayFilter, displayFilter}=props
 
+  
+
 
   return (
     <div className={styles.content}>
