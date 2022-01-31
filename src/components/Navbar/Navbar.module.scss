@@ -15,12 +15,13 @@ nav {
     z-index: 2;
     margin-top: 1px;
     padding-bottom: 2%;
+    padding-top: 2%;
     
 }
 
 .title{
-    margin-left: -35%;
     font-size: 20px;
+    margin-left: -30%;
 }
 
 
@@ -28,12 +29,19 @@ nav {
 @media screen and (min-width: 481px){
 
     .title{
-        margin-left: -25%;
         font-size: inherit;
     }
     
     nav {
        font-size: 25px;    
+    }
+
+}
+
+@media screen and (min-width: 600px){
+
+    .title{
+        margin-left: -20%;
     }
 
 }
@@ -59,6 +67,8 @@ nav {
     .title{
         margin-left: unset;
     }
+
+   
 
 }
 
