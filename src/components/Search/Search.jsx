@@ -9,7 +9,7 @@ const Search = (props) => {
   const [displayFilter, setDisplayFilter] = useState(false);
 
   return (
-    <div className={styles.Search}>
+    <div className={styles.Search} displayFilter={displayFilter}>
       <SearchBar optimizeBeerSelection={optimizeBeerSelection} determineBeerSelection={determineBeerSelection} setDisplayFilter={setDisplayFilter} displayFilter={displayFilter}/> 
       {displayFilter?<Filter determineBeerSelection={determineBeerSelection}/>:null}
     </div>
