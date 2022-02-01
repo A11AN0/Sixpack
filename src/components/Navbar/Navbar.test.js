@@ -1,9 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Navbar from './Navbar';
+import React from "react";
+import Navbar from "./Navbar";
+import {shallow} from "enzyme";
 
-it('It should mount', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<Navbar />, div);
-  ReactDOM.unmountComponentAtNode(div);
-});
+
+
+describe("Navbar tests", () => {
+  let component;
+
+  beforeEach(()=>{
+    component = shallow(<Navbar/>);
+  })
+
+  it("The Navbar should render", ()=>{
+    expect(component).toBeTruthy();
+  })
+ 
+})
