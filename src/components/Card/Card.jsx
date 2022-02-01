@@ -10,7 +10,7 @@ const Card = (props) => {
   const [faceDown, setFaceDown] = useState(false);
 
   return (
-    <div className={styles.cardBody} onClick={()=>{setFaceDown(!faceDown)}}>
+    <div className={styles.cardBody} faceDown={faceDown} onClick={()=>{setFaceDown(!faceDown)}}>
       {!faceDown? <CardFront beer={beer} colour={colour}/>: <CardBack beer={beer} colour={colour}/>}
     </div>
   )
