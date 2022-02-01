@@ -1,15 +1,23 @@
-import React from 'react';
+import React from "react";
+import Search from "./Search";
 import { shallow } from 'enzyme';
-import Search from './Search';
 
-describe('<Search />', () => {
+describe("Search tests", () => {
   let component;
 
+  
   beforeEach(() => {
     component = shallow(<Search />);
-  });
+  })
 
-  test('It should mount', () => {
-    expect(component.length).toBe(1);
-  });
+  it('should render', () => {
+    expect(component).toBeTruthy();
+  })
+
+  it('should only one component (searchbar) by default ', () => {
+    expect(component.find('div').prop('displayFilter')).toBe(false);
+    expect(component.find('div').children().length).toBe(1);
+  })
+
+ 
 });

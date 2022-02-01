@@ -16,7 +16,7 @@ describe("SearchBar tests", () => {
     expect(component).toBeTruthy();
   })
 
-  it("should call the parent function 'optimizeBeerSelection' on input", ()=>{
+  it("should call the parent function 'optimizeBeerSelection' on user input", ()=>{
     component.find("input").simulate("input", {target: {value: "User input"}} )
     expect(mockFn).toHaveBeenCalled();
   })
