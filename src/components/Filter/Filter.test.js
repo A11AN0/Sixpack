@@ -1,15 +1,31 @@
-import React from 'react';
-import { shallow } from 'enzyme';
-import Filter from './Filter';
+import React from "react";
+import Filter from "./Filter";
+import {shallow} from "enzyme";
 
-describe('<Filter />', () => {
+
+
+describe("Filter tests", () => {
   let component;
+  let mockFn;
 
-  beforeEach(() => {
-    component = shallow(<Filter />);
-  });
+  beforeEach(()=>{
+    mockFn = jest.fn();
+    component = shallow(<Filter determineBeerSelection={mockFn}/>)
+  })
 
-  test('It should mount', () => {
-    expect(component.length).toBe(1);
-  });
-});
+  it("The Filter should render", ()=>{
+    expect(component).toBeTruthy();
+  })
+
+  it("When clicked, all filters should call determineBeerSelection()", ()=>{
+    component.find("input").at(0).simulate("input")
+    expect(mockFn).toHaveBeenCalled();
+
+    component.find("input").at(1).simulate("input")
+    expect(mockFn).toHaveBeenCalled();
+
+    component.find("input").at(2).simulate("input")
+    expect(mockFn).toHaveBeenCalled();
+  })
+ 
+})

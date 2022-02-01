@@ -5,7 +5,7 @@ import SearchBar from './SearchBar';
 
 describe("SearchBar tests", () => {
   let component;
-  let mockFn
+  let mockFn;
 
   beforeEach(()=>{
     mockFn = jest.fn();
