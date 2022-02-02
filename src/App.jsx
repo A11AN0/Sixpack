@@ -8,20 +8,20 @@ import styles from './App.module.scss'
 const App = () => {
 
 const [beers, setBeers] = useState([]);
-const [memory, setMemory] = useState([]);
+const [filter, setFilter] = useState('none')
 
-const determineBeerSelection = async (filter)=>{
-  setBeers(await getBeers(filter))
-  setMemory([])
+const determineBeerSelection = async (filterChoice)=>{
+  setBeers(await getBeers(filterChoice))
+  setFilter(filterChoice)
 }
 
-const optimizeBeerSelection = (input)=>{
-  if(memory.length === 0){setMemory(beers)}
-  setBeers(memory.filter((beer)=>((beer.name).toLowerCase()).includes(input.toLowerCase())))
+const optimizeBeerSelection = async (input)=>{
+  const currentArray = await getBeers(filter)
+  setBeers(currentArray.filter((beer)=>((beer.name).toLowerCase()).includes(input.toLowerCase())))
 }
 
 useEffect(()=>{
-  determineBeerSelection('none')
+  determineBeerSelection(filter)
 }, [])
   
 
