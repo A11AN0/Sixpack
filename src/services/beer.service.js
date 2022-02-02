@@ -8,9 +8,12 @@ const requestBeers = async(filter)=>{
 
 
 export const getBeers = async(filter)=>{
-    if(filter === 'none') return await requestBeers(filter)
-    if(filter === 'abv') return await requestBeers(filter)
-    if(filter === 'classic') return await requestBeers(filter)
-    if(filter === 'acidity') return await (await requestBeers(filter)).filter((beer)=>beer.ph < 4)
+    const beerArray = await requestBeers(filter);
+    
+    if(filter === 'none') return beerArray;
+    if(filter === 'abv') return beerArray;
+    if(filter === 'classic') return beerArray
+    if(filter === 'acidity') return await beerArray.filter((beer)=>beer.ph < 4)
     if(!filter) return await requestBeers('none')
 }
+
