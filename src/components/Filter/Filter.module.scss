@@ -11,7 +11,7 @@
         position: relative;
         bottom: 0.3rem;
         left: 0.3rem;
-        font-size: 9.3px;
+        font-size: 9.2px;
         
     }
 
@@ -21,6 +21,23 @@
     }
 
     
+}
+
+@media screen and (min-width: 481px){
+
+    label{
+        font-size: 10px;
+    }
+
+}
+
+
+@media screen and (min-width: 768px){
+    
+    label{
+        font-size: 13px; 
+    }
+
 }
 
 @media screen and (min-width: 991px){
@@ -33,7 +50,11 @@
         position: relative;
         bottom: 2px;
         left: 2px;
+        font-size: 9.3px; 
     }
 
 
 }
+
+
+
