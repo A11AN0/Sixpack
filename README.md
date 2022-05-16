@@ -10,9 +10,9 @@
 
 The purpose of this app is to provide users with an easy to read, and informative way to view the different beers available to them from the Brewdog API. The cards are displayed in a grid format, which allows the user to scroll through each card, and view the information about each beer when clicked.
 
-<p align="center">
-  <img src="./src/images/appImage.png" alt="Six-Pack Gif">
-</p>
+<video autoplay loop muted playsinline>
+  <source src="./src/images/appVid.mov" type="video/mp4">
+</video>
 
 ---
 
@@ -77,6 +77,8 @@ const optimizeBeerSelection = async (input) => {
 ```
 
 On user input (in the searchBar) the optimizeBeerSelection function will filter the current array as determined by getBeers for characters which match the inputted string. It will then use react useState to set the beers array. The beers array is then passed down to the card list for the user to view and interact with.
+
+-There is more info in the main.js file!
 
 ## Technology
 
