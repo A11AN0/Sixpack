@@ -12,6 +12,12 @@ The purpose of this app is to provide users with an easy to read, and informativ
 
 ---
 
+<p align="center">
+  <img src="./images/appGif.gif" alt="Snake game gif">
+</p>
+
+---
+
 | Table of Contents               |
 | ------------------------------- |
 | [User Story](#UserStory)        |
