@@ -10,10 +10,6 @@
 
 The purpose of this app is to provide users with an easy to read, and informative way to view the different beers available to them from the Brewdog API. The cards are displayed in a grid format, which allows the user to scroll through each card, and view the information about each beer when clicked.
 
-<video auto-play="true" loop="loop"  plays-inline="true">
-  <source src="https://github.com/A11AN0/Sixpack/blob/main/src/images/app.mov" type="video/mp4">
-</video>
-
 ---
 
 | Table of Contents               |
