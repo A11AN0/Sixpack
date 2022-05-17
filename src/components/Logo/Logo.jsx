@@ -7,7 +7,7 @@ const Logo = () => {
             <a
                 href="https://allanodunga.au"
                 target={"_blank"}
-                rel="noreferrer"
+                rel={"noreferrer"}
                 className={styles.logo__link}
             >
                 <span className={`${styles.logo__link__name}`}>ALLAN.O</span>
