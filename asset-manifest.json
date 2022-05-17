@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Sixpack/static/css/main.d6bed072.css",
-    "main.js": "/Sixpack/static/js/main.b1d21b53.js",
+    "main.js": "/Sixpack/static/js/main.4ccbe708.js",
     "static/js/787.3405874d.chunk.js": "/Sixpack/static/js/787.3405874d.chunk.js",
     "index.html": "/Sixpack/index.html",
     "main.d6bed072.css.map": "/Sixpack/static/css/main.d6bed072.css.map",
-    "main.b1d21b53.js.map": "/Sixpack/static/js/main.b1d21b53.js.map",
+    "main.4ccbe708.js.map": "/Sixpack/static/js/main.4ccbe708.js.map",
     "787.3405874d.chunk.js.map": "/Sixpack/static/js/787.3405874d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d6bed072.css",
-    "static/js/main.b1d21b53.js"
+    "static/js/main.4ccbe708.js"
   ]
 }
